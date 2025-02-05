@@ -1,0 +1,22 @@
+{
+	"title": "alib",
+	"type":	"tool",
+	"tags":	["build", "scenic"],
+	"ignore":
+	[
+		"*.txt",
+		"*.log",
+		"*.vmf",
+        "*.vmx",
+        "*.prt",
+		"*.psd",
+		"*.vcproj",
+		"*.svn",
+		"*.php",
+
+        "out.gma",
+        "addon_icon.jpg",
+		
+        "models/*.sw.vtx"
+	]
+}
