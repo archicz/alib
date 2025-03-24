@@ -34,7 +34,7 @@ local DefaultStyle =
         surface.DrawText(txt)
     end,
 
-    ["Checkbox"] = function(x, y, boxSize, boxSpacing, txt, textW, textH)
+    ["Checkbox"] = function(x, y, checked, boxSize, boxSpacing, txt, textW, textH)
         surface.SetDrawColor(41, 41, 41)
         surface.DrawRect(x, y, boxSize, boxSize)
 
@@ -252,7 +252,7 @@ function imgui.Checkbox(label, checked)
         checked = not checked
     end
 
-    imgui.Draw(function() imgui.InvokeStyle("Checkbox", x, y, boxSize, boxSpacing, label, textW, textH) end)
+    imgui.Draw(function() imgui.InvokeStyle("Checkbox", x, y, checked, boxSize, boxSpacing, label, textW, textH) end)
     imgui.ContentAdd(boxSize + boxSpacing + textW, boxSize)
 
     return checked
